@@ -6,7 +6,7 @@ require('dotenv').config
 var bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const {mongodb, ObjectId} = require("mongodb");
-const mySecret = process.env['MONGO_URI'];
+const mySecret = "mongodb+srv://Kevin:ultraultra@cluster0.bx5tm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(mySecret, {useNewUrlParser: true, useUnifiedTopology: true});
 const {Schema} = mongoose;
